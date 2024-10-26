@@ -1,0 +1,129 @@
+.sort-container {
+    margin: 0px;
+    text-align: center;
+    width: 800px;  /* Fixed width for the sort container */
+    height: 590px; /* Fixed height for the sort container */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.array-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: flex-end; /* Align bars to the bottom */
+    justify-content: center; /* Center the bars horizontally */
+    margin: 10px 0; /* Margin for the array container */
+    flex-wrap: nowrap; /* Prevent bars from wrapping to the next line */
+}
+
+.array-bar {
+    width: 12px; /* Width of each bar */
+    margin: 0 4px; /* Margin for spacing between bars */
+    position: relative; /* For positioning the bar value */
+}
+
+.bar-value {
+    position: absolute; /* Position the value inside the bar */
+    bottom: -20px; /* Position below the bar */
+    font-size: 10px; /* Font size of the number */
+    color: #333; /* Text color */
+    text-align: center; /* Center the text */
+    width: 100%; /* Center the value below the bar */
+}
+
+.dropdown-container {
+    margin: 0px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #d21f1f;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: red; /* Focused border color */
+}
+
+.algorithm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .array-bar {
+        width: 8px; /* Smaller width for smaller screens */
+        margin: 0 2px; /* Smaller margin for smaller screens */
+    }
+
+    .bar-value {
+        font-size: 8px; /* Smaller font size for values */
+        bottom: -15px; /* Adjust position for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .array-bar {
+        width: 6px; /* Smaller width for mobile screens */
+        margin: 0 1px; /* Smaller margin for mobile screens */
+    }
+
+    select {
+        font-size: 14px; /* Smaller font size for dropdown */
+        padding: 8px; /* Adjusted padding */
+    }
+
+    .sort-container {
+        width: 370px; /* Adjusted width for mobile screens */
+    }
+
+    .bar-value {
+        font-size: 6px; /* Smaller font size for values */
+        bottom: -12px; /* Adjust position for smaller screens */
+    }
+}
+
+/* Sorting Algorithm Background Colors */
+.bubble-sort {
+    background-color: #f0f8ff; /* Background color for Bubble Sort */
+}
+
+.bubble-sort .array-bar {
+    background-color: #4682b4; /* Bar color for Bubble Sort */
+}
+
+.selection-sort {
+    background-color: #f5fffa; /* Background color for Selection Sort */
+}
+
+.selection-sort .array-bar {
+    background-color: #32cd32; /* Bar color for Selection Sort */
+}
+
+.insertion-sort {
+    background-color: #fff5ee; /* Background color for Insertion Sort */
+}
+
+.insertion-sort .array-bar {
+    background-color: #ff4500; /* Bar color for Insertion Sort */
+}
+
+.quick-sort {
+    background-color: #f0fff0; /* Background color for Quick Sort */
+}
+
+.quick-sort .array-bar {
+    background-color: #ff69b4; /* Bar color for Quick Sort */
+}
+
+.merge-sort {
+    background-color: #f5f5dc; /* Background color for Merge Sort */
+}
+
+.merge-sort .array-bar {
+    background-color: #8a2be2; /* Bar color for Merge Sort */
+}
